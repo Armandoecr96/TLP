@@ -111,17 +111,15 @@ public class Main {
             return true;
         }else{
             if (pila.peek().equals('S')) {
-            pila.pop();
+                    pila.pop();
+            }
             if(pila.empty()) {
                 return true;
-            }else
+            }else{
                 return false;
+            }
         } 
-        }
         
-        
-        
-        return true;
     }
     
 }
