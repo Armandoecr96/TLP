@@ -58,7 +58,7 @@ public class Main {
         
         //Programa 
         
-        if(cadena.length()!= 0 && cadena.length()%2!=0){
+        if(cadena.length() == 0 && cadena.length()%2!=0){
             return false;
         }
         
@@ -107,13 +107,18 @@ public class Main {
             }                    
         }
         
-        if (pila.peek().equals('S')) {
+        if (pila.empty() == true) {
+            return true;
+        }else{
+            if (pila.peek().equals('S')) {
             pila.pop();
             if(pila.empty()) {
                 return true;
             }else
                 return false;
+        } 
         }
+        
         
         
         return true;
